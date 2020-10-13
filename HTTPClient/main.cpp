@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <map>
+#include "HTTPRequest.hpp"
+#include "HTTPResponse.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    HTTPRequest *request = new HTTPRequest("www.google.com", RequestLine(GET, "/", "1.1"), map<char *, char *>(), NULL);
+    HTTPResponse *response = request->sendRequest();
+    
+    printf("status: %d\n", response->responseLine.status);
+    printf(response->getBody());
     return 0;
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8EAA3EFB24F858E2006179F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA3EFA24F858E2006179F2 /* main.cpp */; };
+		8EAA3F0C24F864F4006179F2 /* HTTPRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA3F0A24F864F4006179F2 /* HTTPRequest.cpp */; };
+		8EAA3F0F24F864FC006179F2 /* HTTPResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA3F0D24F864FC006179F2 /* HTTPResponse.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		8EAA3EF724F858E2006179F2 /* HTTPClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HTTPClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAA3EFA24F858E2006179F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8EAA3F0A24F864F4006179F2 /* HTTPRequest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HTTPRequest.cpp; sourceTree = "<group>"; };
+		8EAA3F0B24F864F4006179F2 /* HTTPRequest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HTTPRequest.hpp; sourceTree = "<group>"; };
+		8EAA3F0D24F864FC006179F2 /* HTTPResponse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HTTPResponse.cpp; sourceTree = "<group>"; };
+		8EAA3F0E24F864FC006179F2 /* HTTPResponse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HTTPResponse.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				8EAA3EFA24F858E2006179F2 /* main.cpp */,
+				8EAA3F0A24F864F4006179F2 /* HTTPRequest.cpp */,
+				8EAA3F0B24F864F4006179F2 /* HTTPRequest.hpp */,
+				8EAA3F0D24F864FC006179F2 /* HTTPResponse.cpp */,
+				8EAA3F0E24F864FC006179F2 /* HTTPResponse.hpp */,
 			);
 			path = HTTPClient;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EAA3F0F24F864FC006179F2 /* HTTPResponse.cpp in Sources */,
+				8EAA3F0C24F864F4006179F2 /* HTTPRequest.cpp in Sources */,
 				8EAA3EFB24F858E2006179F2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
